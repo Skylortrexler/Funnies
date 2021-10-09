@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "funnies",
+  "version": "${version}",
+  "name": "Funnies",
+  "description": "just some fun randoms",
+  "authors": [
+    "SkylorBeck"
+  ],
+  "contact": {
+    "website": "https://skylorbeck.website/"
+  },
+  "license": "MIT",
+  "icon": "assets/funnies/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "website.skylorbeck.funnies.funnies.client.FunniesClient"
+    ],
+    "main": [
+      "website.skylorbeck.funnies.funnies.Funnies"
+    ]
+  },
+  "mixins": [
+    "funnies.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.1",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
