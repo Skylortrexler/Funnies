@@ -1,8 +1,7 @@
-package website.skylorbeck.funnies.funnies;
+package website.skylorbeck.funnies;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class Registrar {

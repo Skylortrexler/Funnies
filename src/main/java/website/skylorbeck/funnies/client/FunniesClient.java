@@ -1,4 +1,4 @@
-package website.skylorbeck.funnies.funnies.client;
+package website.skylorbeck.funnies.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;

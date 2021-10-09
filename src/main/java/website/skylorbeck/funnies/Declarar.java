@@ -1,4 +1,4 @@
-package website.skylorbeck.funnies.funnies;
+package website.skylorbeck.funnies;
 
 import net.minecraft.util.Identifier;
 

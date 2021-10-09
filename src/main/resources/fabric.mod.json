@@ -5,7 +5,7 @@
   "name": "Funnies",
   "description": "just some fun randoms",
   "authors": [
-    "SkylorBeck"
+    "Skylor Beck"
   ],
   "contact": {
     "website": "https://skylorbeck.website/"
@@ -15,10 +15,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "website.skylorbeck.funnies.funnies.client.FunniesClient"
+      "website.skylorbeck.funnies.client.FunniesClient"
     ],
     "main": [
-      "website.skylorbeck.funnies.funnies.Funnies"
+      "website.skylorbeck.funnies.Funnies"
     ]
   },
   "mixins": [
