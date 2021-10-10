@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "funnies:block/can_of_beans_crop_2"
+  }
+}

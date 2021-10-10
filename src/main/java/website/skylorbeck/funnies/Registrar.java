@@ -7,6 +7,8 @@ import net.minecraft.util.registry.Registry;
 public class Registrar {
     public static void register(){
         regItem("can_of_beans",Declarar.CANOFBEANS);
+        regBlock("can_of_beans_crop",Declarar.CANOFBEANSCROP);
+        regItem("can_of_beans_seed",Declarar.CANOFBEANSSEED);
     }
 
 
