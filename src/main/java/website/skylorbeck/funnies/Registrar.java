@@ -9,6 +9,8 @@ public class Registrar {
         regItem("can_of_beans",Declarar.CANOFBEANS);
         regBlock("can_of_beans_crop",Declarar.CANOFBEANSCROP);
         regItem("can_of_beans_seed",Declarar.CANOFBEANSSEED);
+        regBlock("growable_arms_crop",Declarar.GROWABLEARMSCROP);
+        regItem("growable_arms_seed",Declarar.GROWABLEARMSSEED);
     }
 
 

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "funnies:block/growable_arms_crop_6"
+  }
+}

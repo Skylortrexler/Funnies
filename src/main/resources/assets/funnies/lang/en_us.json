@@ -1,4 +1,6 @@
 {
   "item.funnies.can_of_beans" : "Can of Beans",
-  "item.funnies.can_of_beans_seed" : "Can of Beans seeds"
+  "item.funnies.can_of_beans_seed" : "Can of Beans seeds",
+  "item.funnies.growable_arms_seed": "Catchweed seed",
+  "item.funnies.growable_arms_crop": "Catchweed"
 }
