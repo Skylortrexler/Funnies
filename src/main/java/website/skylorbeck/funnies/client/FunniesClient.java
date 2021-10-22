@@ -12,5 +12,6 @@ public class FunniesClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMapImpl.INSTANCE.putBlock(Declarar.CANOFBEANSCROP, RenderLayer.getCutout());
+        BlockRenderLayerMapImpl.INSTANCE.putBlock(Declarar.GROWABLEARMSCROP, RenderLayer.getCutout());
     }
 }

@@ -37,7 +37,7 @@ public class ArmsCrop extends CropBlock {
 
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        entity.damage(DamageSource.WITHER,1);
+        entity.damage(DamageSource.WITHER,this.getGrowthAmount(world)/2f);
         if (entity.isAlive() && entity instanceof LivingEntity){
             ((LivingEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,20,1));
         }
