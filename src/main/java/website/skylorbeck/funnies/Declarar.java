@@ -19,7 +19,7 @@ public class Declarar {
     public static final Block CANOFBEANSCROP = new BeanBlock(FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
     public static final Item CANOFBEANSSEED = new AliasedBlockItem(CANOFBEANSCROP,new FabricItemSettings().group(ItemGroup.MATERIALS));
 
-    public static final Block GROWABLEARMSCROP = new ArmsCrop(FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).dropsNothing());
+    public static final Block GROWABLEARMSCROP = new ArmsCrop(FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
     public static final Item GROWABLEARMSSEED = new AliasedBlockItem(GROWABLEARMSCROP,new FabricItemSettings().group(ItemGroup.MATERIALS));
 
 

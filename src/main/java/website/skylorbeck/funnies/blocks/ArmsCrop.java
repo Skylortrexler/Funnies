@@ -1,5 +1,6 @@
 package website.skylorbeck.funnies.blocks;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
 import net.minecraft.block.ShapeContext;
@@ -11,6 +12,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
@@ -37,6 +39,7 @@ public class ArmsCrop extends CropBlock {
 
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        if (this.isMature(state))
         entity.damage(DamageSource.WITHER,this.getGrowthAmount(world)/2f);
         if (entity.isAlive() && entity instanceof LivingEntity){
             ((LivingEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,20,1));
@@ -47,6 +50,11 @@ public class ArmsCrop extends CropBlock {
     @Override
     protected ItemConvertible getSeedsItem() {
         return Declarar.GROWABLEARMSSEED;
+    }
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(AGE);
     }
 
 }
