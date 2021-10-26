@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "funnies",
-  "version": "${version}",
+  "version": "2",
   "name": "Funnies",
   "description": "just some fun randoms",
   "authors": [
