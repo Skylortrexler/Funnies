@@ -1,6 +1,7 @@
 package website.skylorbeck.funnies.blocks;
 
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.function.BooleanBiFunction;
@@ -12,10 +13,12 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
+import org.jetbrains.annotations.Nullable;
+import website.skylorbeck.funnies.entities.FairyJarEntity;
 
 import java.util.Random;
 
-public class FairyJarBlock extends Block {
+public class FairyJarBlock extends BlockWithEntity {
     private int cooldown = 0;
     protected static final VoxelShape BOUNDING_SHAPE =
             VoxelShapes.union(
@@ -55,5 +58,16 @@ public class FairyJarBlock extends Block {
 
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
         return sideCoversSmallSquare(world, pos.down(), Direction.UP);
+    }
+
+    @Nullable
+    @Override
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new FairyJarEntity(pos,state);
+    }
+    @Override
+    public BlockRenderType getRenderType(BlockState state)
+    {
+        return BlockRenderType.ENTITYBLOCK_ANIMATED;
     }
 }

@@ -1,0 +1,203 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fairy.flya": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [-15, 0, 0],
+							"easing": "easeInElastic"
+						},
+						"2.0": {
+							"vector": [0, 0, 0]
+						},
+						"3.0": {
+							"vector": [15, 0, 0],
+							"easing": "easeInElastic"
+						},
+						"4.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.fairy.flyb": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 15, 0],
+							"easing": "easeInElastic"
+						},
+						"2.0": {
+							"vector": [0, 0, 0],
+							"easing": "easeInElastic"
+						},
+						"3.0": {
+							"vector": [0, -15, 0],
+							"easing": "easeInElastic"
+						},
+						"4.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.fairy.idle": {
+			"loop": true,
+			"animation_length": 3.08,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [-10, 0, 0],
+							"easing": "linear"
+						},
+						"1.52": {
+							"vector": [0, 0, 0],
+							"easing": "linear"
+						},
+						"2.36": {
+							"vector": [10, 0, 0],
+							"easing": "linear"
+						},
+						"3.04": {
+							"vector": [0, 0, 0],
+							"easing": "linear"
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 1, 0],
+							"easing": "linear"
+						},
+						"1.52": {
+							"vector": [0, 1, 0],
+							"easing": "linear"
+						},
+						"2.36": {
+							"vector": [0, -1, 0],
+							"easing": "linear"
+						},
+						"3.04": {
+							"vector": [0, 0, 0],
+							"easing": "linear"
+						}
+					}
+				}
+			}
+		},
+		"animation.fairy.wings": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"wingL": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, -30]
+						},
+						"0.08": {
+							"vector": [0, 0, 30]
+						},
+						"0.16": {
+							"vector": [0, 0, -30]
+						},
+						"0.24": {
+							"vector": [0, 0, 30]
+						},
+						"0.32": {
+							"vector": [0, 0, -30]
+						},
+						"0.4": {
+							"vector": [0, 0, 30]
+						},
+						"0.48": {
+							"vector": [0, 0, -30]
+						},
+						"0.56": {
+							"vector": [0, 0, 30]
+						},
+						"0.64": {
+							"vector": [0, 0, -30]
+						},
+						"0.72": {
+							"vector": [0, 0, 30]
+						},
+						"0.8": {
+							"vector": [0, 0, -30]
+						},
+						"0.88": {
+							"vector": [0, 0, 30]
+						},
+						"0.96": {
+							"vector": [0, 0, -30]
+						}
+					}
+				},
+				"WingR": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 30]
+						},
+						"0.08": {
+							"vector": [0, 0, -30]
+						},
+						"0.16": {
+							"vector": [0, 0, 30]
+						},
+						"0.24": {
+							"vector": [0, 0, -30]
+						},
+						"0.32": {
+							"vector": [0, 0, 30]
+						},
+						"0.4": {
+							"vector": [0, 0, -30]
+						},
+						"0.48": {
+							"vector": [0, 0, 30]
+						},
+						"0.56": {
+							"vector": [0, 0, -30]
+						},
+						"0.64": {
+							"vector": [0, 0, 30]
+						},
+						"0.72": {
+							"vector": [0, 0, -30]
+						},
+						"0.8": {
+							"vector": [0, 0, 30]
+						},
+						"0.88": {
+							"vector": [0, 0, -30]
+						},
+						"0.96": {
+							"vector": [0, 0, 30]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
