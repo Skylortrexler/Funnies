@@ -14,6 +14,7 @@ import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.Angerable;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.BeeEntity;
+import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -101,8 +102,12 @@ public class FairyEntity extends BeeEntity implements Angerable, IAnimatable {
 
     @Override
     public boolean isBreedingItem(ItemStack stack) {
-        return false;
+        return stack.isOf(Declarar.FAIRYDUST);
     }
+    public FairyEntity createChild(ServerWorld serverWorld, PassiveEntity passiveEntity) {
+        return Declarar.FAIRYENTITY.create(serverWorld);
+    }
+
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {

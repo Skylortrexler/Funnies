@@ -15,7 +15,7 @@ public class FairyModelGeo extends AnimatedGeoModel<FairyEntity> {
 
     @Override
     public Identifier getTextureLocation(FairyEntity object) {
-        return Declarar.getIdentifier("textures/entity/fairy/fairy.png");
+        return object.hasAngerTime()? Declarar.getIdentifier("textures/entity/fairy/fairy_mad.png"):Declarar.getIdentifier("textures/entity/fairy/fairy.png");
     }
 
     @Override

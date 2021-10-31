@@ -21,6 +21,12 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.gen.YOffset;
+import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
 import website.skylorbeck.funnies.blocks.ArmsCrop;
 import website.skylorbeck.funnies.blocks.BeanBlock;
 import website.skylorbeck.funnies.blocks.FairyJarBlock;
@@ -38,6 +44,16 @@ public class Declarar {
 
     public static final Block FAIRYJARBLOCK = new FairyJarBlock(FabricBlockSettings.copyOf(Blocks.TORCH));
     public static final Item FAIRYJAR = new FairyJar(FAIRYJARBLOCK,new FabricItemSettings().group(ItemGroup.MISC));
+
+    public static final Item FAIRYDUST = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+    public static final Block FAIRYDUSTBLOCK = new Block(FabricBlockSettings.copyOf(Blocks.GLOWSTONE));
+    public static final Item FAIRYDUSTBLOCKITEM = new BlockItem(FAIRYDUSTBLOCK,new FabricItemSettings().group(ItemGroup.MATERIALS));
+    public static final ConfiguredFeature<?,?> FAIRYDUSTFEATURE = Feature.ORE.configure(
+            new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_NETHER,FAIRYDUSTBLOCK.getDefaultState(),5))
+            .range(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(0),YOffset.fixed(100))))
+            .spreadHorizontally()
+            .repeat(10);
+
 
     public static final BlockEntityType<FairyJarEntity> FAIRY_JAR_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE,Declarar.getIdentifier("fairyjar"), FabricBlockEntityTypeBuilder.create(FairyJarEntity::new,FAIRYJARBLOCK).build(null));
     public static final EntityType<FairyEntity> FAIRYENTITY = Registry.register(Registry.ENTITY_TYPE,Declarar.getIdentifier("fairy"), FabricEntityTypeBuilder.create(SpawnGroup.CREATURE,FairyEntity::new).dimensions(EntityDimensions.fixed(0.7F, 0.6F)).trackRangeBlocks(8).build());

@@ -3,6 +3,8 @@
   "item.funnies.can_of_beans_seed" : "Can of Beans seeds",
   "item.funnies.growable_arms_seed": "Catchweed seed",
   "item.funnies.growable_arms_crop": "Catchweed",
+  "item.funnies.fairy_dust_item": "Fairy Dust",
   "block.funnies.fairy_jar_block": "Fairy-In-A-Jar",
+  "block.funnies.fairy_dust_block": "Fairy Dust Block",
   "entity.funnies.fairy": "Fairy"
 }
